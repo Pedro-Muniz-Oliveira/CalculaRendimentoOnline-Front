@@ -10,7 +10,7 @@ async function calcular() {
 
   const data = { investido: parseFloat(investido), compra: parseFloat(compra), atual: parseFloat(atual) };
 
-  const res = await fetch("https://calcula-rendimento.vercel.app/calcular", {
+  const res = await fetch("https://calcularendimentoonline-back.onrender.com/calcular", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
