@@ -10,7 +10,7 @@ async function calcular() {
 
   const data = { investido: parseFloat(investido), compra: parseFloat(compra), atual: parseFloat(atual) };
 
-  const res = await fetch("http://localhost:8080/calcular", {
+  const res = await fetch("https://calcularendimentoonline-back.onrender.com/calcular", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
